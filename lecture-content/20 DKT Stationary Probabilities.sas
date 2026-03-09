@@ -1,4 +1,6 @@
 ** https://chatgpt.com/share/6818be5e-e134-8004-9cd9-da4b3ca2742f **;
+** credits to Johannes Palmetshofer from JKU;
+
 
 proc iml;
 /* Initialize a 40x40 zero matrix */
