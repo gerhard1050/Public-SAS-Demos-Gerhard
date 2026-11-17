@@ -120,3 +120,12 @@ data demand_month_wide;
 
 run;
 
+
+%CASTableLoad(demand_month_wide,inlib=work,outlib=casuser);
+
+/**
+data gdata.product_demand_wide;
+ set WORK.DEMAND_MONTH_WIDE;
+run;
+ */
+
