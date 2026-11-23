@@ -29,8 +29,8 @@ print mat;
 call eigen(evals, evecs, t(mat));
 
 /* Find eigenvalue closest to 1 */
-diffs = abs(evals - 1);
-idx = loc(diffs = min(diffs));
+diffs = (evals - {1 0})[ , ##];   /* SSQ for each row */
+idx = diffs[ >:< ];               /* index of minimum difference */
 
 /* Get stationary distribution (normalize) */
 stationary = abs(evecs[, idx]);
