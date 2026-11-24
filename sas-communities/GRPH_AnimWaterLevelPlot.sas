@@ -41,9 +41,11 @@ data _null_;
 run;
 
 
+%DataDrivenLineGraph; ** To define this macro use Code code from 
+STEP 1-5 (not Step 0!!!) from program "GRPH_DataDrivenLineColors.sas";
 
-%DataDrivenLineGraph;
-
+*** Alternatively paste the code from STEP 1-5 (not Step 0!!!) 
+from program "GRPH_DataDrivenLineColors.sas" here.;
 
 
 
@@ -52,9 +54,9 @@ run;
 
 
 /***********************************************************************************
- ***   Step 5 - Set Closing Options
+ ***   Step 4 - Set Closing Options
  **********************************************************************************/
-run;
+
 
 options printerpath=gif animation=stop;
 ods printer close;
